@@ -55,4 +55,5 @@ SELECT
 INTO current_emp
 FROM retirement_info as ri
 LEFT JOIN dept_emp as de
-ON ri.emp_no = de.emp_no;
+ON ri.emp_no = de.emp_no
+WHERE de.to_date = ('9999-01-01');
