@@ -45,4 +45,5 @@ INTO retiring_titles
 FROM unique_titles as ut
 GROUP BY title 
 ORDER BY COUNT(title) DESC;
+	
 
